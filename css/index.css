@@ -43,6 +43,7 @@ h1{
     position: fixed;
     width: 100vw;
     padding: 0;
+    z-index: 100;
 }
 ul{
     list-style-type: none;
@@ -62,7 +63,7 @@ li a{
     padding: 25px;
 
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.2vw;
+    font-size: 12px;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2px;
@@ -112,13 +113,6 @@ li a:hover{
     float: left;
     border-radius: 10px;
 }
-
-@media screen and (max-width: 800px) {
-    .col-3-cards, .col-2-cards{
-        margin: 2% 0;
-        width: 100%;
-    }
-}
 .col-2 img{
     width: 100%;
     border-radius: 10px 10px 0 0;
@@ -132,4 +126,13 @@ button{
     border: 3px solid black;
     padding: 2%;
     margin-bottom: 2%;
+}
+/* Responsive */
+@media screen and (max-width: 800px) {
+    .col-3-cards, .col-2-cards{
+        margin: 2% 0;
+        width: 100%;
+    }
+    ul li{
+    }
 }
