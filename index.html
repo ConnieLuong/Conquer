@@ -5,35 +5,45 @@
    <title>Conquer</title>
 
    <link rel="stylesheet" href="css/index.css"/>
+   <link rel="stylesheet" href="css/navbar.css"/>
 
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
-<body>
-    <header>
-        <div id="navbar">
-            <ul>
-                <li><a href="#" class="header__icon" id="header__icon"></a></li>
-
-                <nav class="menu">
-                    <li><a href="#">Homepage</a></li>
-                    <li><a href="#About_Us">About Us</a></li>
-                    <li><a href="#Services">Services</a></li>
-                    <li><a href="#Contact">Contact</a></li>
-                    <li><a href="https://www.google.com" target="_blank">External</a></li>
-                </nav>
-            </ul>
-        </div>
-
-        <div id="banner">
-            <div class="banner-title">
-                <h1>Conquer</h1>
-                <h2>Simple Template</h2>
+<!--Navigation-->
+<section class="navigation">
+    <div class="nav-container">
+        <div class="brand"></div>
+        <nav>
+            <div class="nav-mobile">
+                <a id="nav-toggle" href="#!"><span></span></a>
             </div>
-        </div>
-    </header>
+            <ul class="nav-list">
+                <li><a href="#">Homepage</a></li>
+                <li><a href="#About_Us">About Us</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="https://www.google.com" target="_blank">External</a></li>
+            </ul>
+        </nav>
+    </div>
+</section>
 
+
+
+<!--Header-->
+<header>
+    <div id="banner">
+        <div class="banner-title">
+            <h1>Conquer</h1>
+            <h2>Simple Template</h2>
+        </div>
+    </div>
+</header>
+
+<!--Body-->
+<body>
     <div id="About_Us">
         <!--3 Columns-->
         <div class="col-3">
@@ -108,5 +118,10 @@
     <footer>
         Copyright &copy; 2019 Connie Luong | Github: <a href="https://github.com/ConnieLuong/Conquer">link</a>
     </footer>
+
+
+    <!--Script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
