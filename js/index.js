@@ -7,4 +7,5 @@ $(document).ready(function(){
     $('.nav-mobile').on('click', function() {
         this.classList.toggle('active');
     });
+    
 });

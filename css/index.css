@@ -28,6 +28,14 @@ h3{
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     font-size: 25px;
+    padding: 0;
+    margin: 0;
+}
+h4{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    font-weight: inherit;
 }
 p{
     font-family: 'Open Sans', sans-serif;
@@ -37,11 +45,6 @@ a{
 }
 
 /* Banner */
-#banner{
-    height: 70vh;
-    background: url("../img/bg-1.jpg") no-repeat aqua;
-    background-size: cover;
-}
 .banner-title{
     position: relative;
     top: 25vh;
@@ -52,68 +55,105 @@ a{
     margin: 5% 0;
 }
 
-/* 3 Columns */
-.col-3 {
-    width: 80%;
-    background: lavender;
-    overflow: hidden;
-    margin: auto;
-    padding: 0 5%;
-}
-.col-3-cards{
-    margin: 2%;
-    background: #f5f5f5;
-    width: calc(88%/3);
-    float: left;
-    border-radius: 10px;
-}
+/* COLUMNS  */
 .col-content{
-    padding: 5%;
+    padding:2.5vw;
     overflow: auto;
-}
-.col-3 img{
-    width: 100%;
-    border-radius: 10px 10px 0 0;
-}
-
-/* 2 Columns */
-.col-2 {
-    width: 80%;
-    background: lavender;
-    overflow: hidden;
-    margin: auto;
-    padding: 0 5% 5% 5%;
-}
-.col-2-cards{
-    margin: 2%;
-    background: #f5f5f5;
-    width: calc(92%/2);
-    float: left;
-    border-radius: 10px;
-}
-.col-2 img{
-    width: 100%;
-    border-radius: 10px 10px 0 0;
 }
 button{
     text-align: center;
     margin: auto;
     display: block;
 
-    background: transparent;
-    border: 3px solid black;
-    padding: 2%;
+    background: white;
+    border: 1px solid rgb(205,205,205);
+    border-radius: 10px;
+    padding: 10px 30px;
     margin-bottom: 2%;
 
-    font-size: 16px;
+    font-size: 20px;
+}
+.col-img{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+/* 3 Columns */
+.col-3 {
+    width: 90%;
+    overflow: hidden;
+    margin: auto;
+    padding: 0 5%;
+}
+.col-3-cards{
+    margin: 2%;
+    background: rgb(245,245,245);
+    width: calc(88%/3);
+    float: left;
+    border-radius: 5px;
+}
+/* 2 Columns */
+.col-2 {
+    width: 90%;
+    overflow: hidden;
+    margin: auto;
+    padding: 0 5% 5% 5%;
+}
+.col-2-cards{
+    margin: 2%;
+    background: rgb(245,245,245);
+    width: calc(92%/2);
+    float: left;
+    border-radius: 5px;
 }
 
+/* Our Services */
+.service-header{
+    padding: 70px 30%;
+    color: white;
+}
+/* 4 Columns */
+.col-4 {
+    width: 90%;
+    overflow: hidden;
+    margin: auto;
+    padding: 5%;
+}
+.col-4-cards{
+    margin: 1%;
+    background: rgb(245,245,245);
+    width: calc(92%/4);
+    float: left;
+    border-radius: 5px;
+}
+/* 1 Column */
+.col-1 {
+    width: 90%;
+    overflow: hidden;
+    margin: auto;
+    padding: 0 5% 5% 5%;
+}
+.col-1-cards{
+    margin: 2%;
+    background: rgb(245,245,245);
+    float: left;
+    border-radius: 5px;
+}
+
+
+
+
 /* Responsive */
+@media screen and (max-width: 990px) {
+    .col-4-cards{
+        margin: 2%;
+        width: calc(92%/2);
+    }
+}
+
 @media screen and (max-width: 800px) {
     .col-3-cards, .col-2-cards{
         margin: 2% 0;
         width: 100%;
     }
-    ul li{
-    }
+
 }
