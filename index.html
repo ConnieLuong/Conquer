@@ -6,6 +6,7 @@
 
    <link rel="stylesheet" href="css/index.css"/>
    <link rel="stylesheet" href="css/navbar.css"/>
+   <link rel="stylesheet" href="css/contact-form.css"/>
    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
 
@@ -16,6 +17,28 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
     <script src="js/index.js"></script>
+
+    <script>
+        var shiftWindow = function() { scrollBy(0, -80) };
+        window.addEventListener("hashchange", shiftWindow);
+        function load() { if (window.location.hash) shiftWindow(); }
+
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
 
 </head>
 
@@ -38,13 +61,11 @@
     </div>
 </section>
 
-
-
 <!--Header-->
 <header>
     <div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" 
     data-image-src="./img/bg-1.jpg" data-natural-width="1400" 
-    data-natural-height="900" style="height: 620px;">
+    data-natural-height="900" style="height: 614px;">
 
         <div class="banner-title">
             <h1>Conquer</h1>
@@ -53,9 +74,11 @@
 
     </div>
 </header>
-
 <!--Body-->
-<body>
+<body onload="load()">
+    
+
+
     <div id="About_Us">
         <!--3 Columns-->
         <div class="col-3">
@@ -202,12 +225,33 @@
     
     <div id="Contact">
 
+    <div class="parallax-container" data-parallax="scroll" data-position="top" data-bleed="10" 
+    data-image-src="./img/bg-3.jpg" data-natural-width="1400" 
+    data-natural-height="900" style="">
+
+        <h5>Contact</h5>
+        <form id="contact-form" action="#">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Name">
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Email">
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your Message Here" style="height:200px"></textarea>
+
+            <input type="submit" value="Send">
+        </form>
+    </div>
     </div>
     <footer>
         Copyright &copy; 2019 Connie Luong | Github: <a href="https://github.com/ConnieLuong/Conquer">link</a>
     </footer>
 
 
-   
+   <img onclick="topFunction()" id="myBtn" alt="Go to top" src="img/top.png">
 </body>
 </html>

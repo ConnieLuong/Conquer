@@ -1,0 +1,58 @@
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(255,255,255,0.5);
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+
+    font-size: 16px;
+    color: #272727;
+}
+
+label{
+    display: none;
+}
+
+input[type=submit] {
+    background-color: #1f1f1f;
+    color: white;
+    padding: 12px 20px;
+    border: 1px white solid;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+}
+
+input[type=submit]:hover {
+    background-color: white;
+    color: black;
+    transition: 300ms ease;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    text-align: inherit;
+    font-weight: inherit;
+}
+
+@media screen and (min-width: 800px) {
+    #contact-form{
+        max-width: 700px;
+        padding: 40px;
+        padding-bottom: 70px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #contact-form{
+        margin:40px;
+        padding-bottom: 70px;
+    }
+}

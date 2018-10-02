@@ -2,7 +2,8 @@
   height: 80px;
   background: #393e4b;
   position: fixed;
-  z-index: 100; }
+  z-index: 100;
+  top: 0px; }
 
 .nav-container {
   min-width: 100vw;
