@@ -23,6 +23,7 @@
         window.addEventListener("hashchange", shiftWindow);
         function load() { if (window.location.hash) shiftWindow(); }
 
+        /* display go to top button when scroll */
         window.onscroll = function() {scrollFunction()};
 
         function scrollFunction() {
